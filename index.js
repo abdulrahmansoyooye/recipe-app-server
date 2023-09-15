@@ -23,7 +23,7 @@ const uri = process.env.URI;
 // file Upload
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
-    cb(null, "src/public/assets");
+    cb(null, "public/assets");
   },
   filename: function (req, file, cb) {
     cb(null, file.originalname);
